@@ -35,7 +35,7 @@ public class TestImageServerProvider {
 	public void test() {
 		// this should not raise java.lang.IllegalArgumentException: URI has an authority component
 		assertThrows(IOException.class, () -> {
-		    ImageServerProvider.getPreferredUriImageSupport(BufferedImage.class, "file:///M:/path/subdirectory/image.png");
+		    ImageServerProvider.getPreferredUriImageSupport(BufferedImage.class, "file://localhost/C$/image.svs");
 		});
 	}
 }
